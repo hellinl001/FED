@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+            <section>
+                <form class="form-horizontal" action="send.php">
+                    <fieldset>
+                        <legend>Contactgegevens</legend>
+
+                        <p>
+                            <label for="naam">Naam</label>
+                            <input type="text" id="naam" placeholder="Naam" pattern="[a-zA-Z0-9]+" required>
+                        </p>
+
+                        <p>
+                            <label for="bedrijf">Bedrijf</label>
+                            <input type="text" id="bedrijf" placeholder="Bedrijf" />
+                        </p>
+
+                        <p>
+                            <label for="adres">Adres</label>
+                            <input type="text" id="adres" placeholder="Adres" required />
+                        </p>
+
+                        <p>
+                            <label for="postcode">Postcode</label>
+                            <input type="text" id="postcode" placeholder="Postcode" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" required />
+                        </p>
+
+                        <p>
+                            <label for="plaats">Plaats</label>
+                            <input type="text" id="plaats" placeholder="Plaats" required />
+                        </p>
+
+                        <p>
+                            <label for="land">Land</label>
+                            <input type="text" id="land" placeholder="Land" required />
+                        </p>
+
+                        <p>
+                            <label for="telefoon">Telefoon</label>
+                            <input type="tel" id="telefoon" placeholder="Telefoon" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" />
+                        </p>
+
+                        <p>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Email" required />
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Voorkeuren</legend>
+
+                        <p>
+                            <label for="favorietemaand">Favoriete maand</label>
+                            <input type="month" id="month" placeholder="month" required />
+                                <option>Januari</option>
+                                <option>Februari</option>
+                                <option>Maart</option>
+                                <option>April</option>
+                                <option>Mei</option>
+                                <option>Juni</option>
+                                <option>Juli</option>
+                                <option>Augustus</option>
+                                <option>September</option>
+                                <option>Oktober</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="kleur">Favoriete Kleur</label>
+                            <input type="color" id="color" placeholder="color" required />
+                        </p>
+                        
+                        <label for="range"> Hoe goed is dit?</label>
+                        <input type="range" name="points" min="1" max="10">
+                    </fieldset>
+                
+
+                </section>
+                    <p>
+                        <input type="submit" value="Verzenden" />
+                    </p>
+    
+</body>
+</html>
